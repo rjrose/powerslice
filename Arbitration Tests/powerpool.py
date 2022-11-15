@@ -1,4 +1,4 @@
-class powerPool:
+class PowerPool:
     #initialize available power to specified size of pool
     def __init__(self,size):
         self.maxPower = size
@@ -23,6 +23,9 @@ class powerPool:
             self.availablePower = self.availablePower + amount
             print("Power Released! Available power: " + str(self.availablePower))
             return True
+    def printState(self):
+        print(str(self.availablePower) + " is available out of " + str(self.maxPower))
+        
     
    
    
