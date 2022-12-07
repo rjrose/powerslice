@@ -46,7 +46,10 @@ def plotPower():
         powLabels.append(label)
         powData.append(deviceDict[label]['currentDraw'])
     matplotlib.pyplot.pie(powData, explode=None, labels=powLabels, colors=None, autopct='%1.1f%%', shadow=False)
-    #matplotlib.pyplot.legend()
+    matplotlib.pyplot.legend(loc='lower left', 
+    bbox_to_anchor=(1, 1)
+    )
+    #matplotlib.pyplot.tight_layout()
     matplotlib.pyplot.show()
 
 
